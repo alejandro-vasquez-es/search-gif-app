@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { getGifs } from "../helpers/getGifts.js";
+import { getGifs } from "../helpers/getGifs.js";
 
 export const useFetchGifs = (category) =>{
 
@@ -23,9 +23,6 @@ export const useFetchGifs = (category) =>{
         })  
     }, [category])
 
-
-    setTimeout(()=>{
-    },2000)
 
     return state
 }

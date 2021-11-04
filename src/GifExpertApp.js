@@ -2,14 +2,13 @@ import React, {useState} from 'react'
 import { AddCategory } from './components/AddCategory.js';
 import {GifCollection} from './components/GifCollection.js';
 
-export const GifExpertApp = () => {
+export const GifExpertApp = ( {defaultCategories = ['Sailor Moon'] } ) => {
 
-    // const categories = ['One punch man', 'Tokyo ghoul', 'Dragon Ball']
-    const [categories, setCategories] = useState(['Sailor Moon']);
+    const [categories, setCategories] = useState( defaultCategories );
 
     return (
-        <>
-            <h2 className = ' animate__animated animate__fadeIn'>GifExpertApp</h2>
+        <React.Fragment>
+            <h2 className = 'animate__animated animate__fadeIn'>GifExpertApp</h2>
             <AddCategory setCategories = {setCategories}/>
             <hr/>
 
@@ -23,6 +22,6 @@ export const GifExpertApp = () => {
                     ))
                 }
             </ol>
-        </>
+        </React.Fragment>
     )
 }

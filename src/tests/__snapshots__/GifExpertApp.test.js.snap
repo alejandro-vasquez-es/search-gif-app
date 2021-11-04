@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GifexpertApp/> tests should have components 1`] = `
+<Fragment>
+  <h2
+    className="animate__animated animate__fadeIn"
+  >
+    GifExpertApp
+  </h2>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <hr />
+  <ol>
+    <GifCollection
+      category="Venom"
+      key="Venom"
+    />
+    <GifCollection
+      category="Godzilla"
+      key="Godzilla"
+    />
+  </ol>
+</Fragment>
+`;
+
+exports[`<GifexpertApp/> tests should match snapshot 1`] = `
+<Fragment>
+  <h2
+    className="animate__animated animate__fadeIn"
+  >
+    GifExpertApp
+  </h2>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <hr />
+  <ol>
+    <GifCollection
+      category="Sailor Moon"
+      key="Sailor Moon"
+    />
+  </ol>
+</Fragment>
+`;
